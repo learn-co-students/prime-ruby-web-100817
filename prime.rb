@@ -12,13 +12,13 @@
 # end
 
 def prime?(n)
- for d in 2..(n - 1)
-  if (n % d) == 0
-   return false
-  end
   if n <= 2
     return false
   end
- end
- true
+  for d in 2..(n - 1)
+    if (n % d) == 0
+      return false
+    end
+  end
+  true
 end
